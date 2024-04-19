@@ -1,3 +1,7 @@
+v-cloak {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -14,6 +18,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
+  background-color: #eee;
   min-height: 100vh;
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -38,4 +44,9 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#app {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
 }

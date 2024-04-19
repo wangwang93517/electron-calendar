@@ -5,7 +5,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
-import styleImport, { AndDesignVueResolve } from 'vite-plugin-style-import'
+import { createStyleImportPlugin, AndDesignVueResolve } from 'vite-plugin-style-import'
 
 export default defineConfig({
   main: {
@@ -42,7 +42,7 @@ export default defineConfig({
         ],
         dts: 'src/types/components.d.ts'
       }),
-      styleImport({
+      createStyleImportPlugin({
         resolves: [AndDesignVueResolve()],
         libs: [
           {

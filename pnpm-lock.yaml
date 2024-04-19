@@ -17,6 +17,9 @@ importers:
       ant-design-vue:
         specifier: 4.x
         version: 4.1.2(vue@3.4.23(typescript@5.4.5))
+      dayjs:
+        specifier: ^1.11.10
+        version: 1.11.10
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
@@ -60,6 +63,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
+      consola:
+        specifier: ^3.2.3
+        version: 3.2.3
       electron:
         specifier: ^28.2.0
         version: 28.3.1
@@ -1334,6 +1340,10 @@ packages:
 
   config-file-ts@0.2.6:
     resolution: {integrity: sha512-6boGVaglwblBgJqGyxm4+xCmEGcWgnWHSWHY5jad58awQhB6gftq0G8HbzU39YqCIYHMLAiL1yjwiZ36m/CL8w==}
+
+  consola@3.2.3:
+    resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
+    engines: {node: ^14.18.0 || >=16.10.0}
 
   console@0.7.2:
     resolution: {integrity: sha512-+JSDwGunA4MTEgAV/4VBKwUHonP8CzJ/6GIuwPi6acKFqFfHUdSGCm89ZxZ5FfGWdZfkdgAroy5bJ5FSeN/t4g==}
@@ -4246,6 +4256,8 @@ snapshots:
     dependencies:
       glob: 10.3.12
       typescript: 5.4.5
+
+  consola@3.2.3: {}
 
   console@0.7.2: {}
 

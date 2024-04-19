@@ -26,17 +26,11 @@ function vueErrorHandler(err: unknown, vm: any, info: string) {
   console.error('vueErrorHandler', name, path, info, window.location.href, err)
 }
 
-export function scriptErrorHandler(
-  event: Event | string,
-  source?: string,
-  lineno?: number,
-  colno?: number,
-  error?: Error
-) {
+export function scriptErrorHandler(event: Event | string, source?: string, lineno?: number, colno?: number, error?: Error) {
   if (event === 'Script error.' && !source) {
     return false
   }
-  const errorInfo: Partial<ErrorLogInfo> = {}
+  const errorInfo = {}
   colno = colno || (window.event && (window.event as any).errorCharacter) || 0
   errorInfo.message = event as string
   if (error?.stack) {

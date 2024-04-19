@@ -10,7 +10,7 @@ const useUserStore = defineStore({
     token: undefined
   }),
   getters: {
-    getToken(state): string {
+    getToken(state): string | undefined {
       console.log('getToken', state.token)
       return state.token
     }

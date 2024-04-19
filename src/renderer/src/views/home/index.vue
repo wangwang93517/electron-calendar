@@ -19,7 +19,6 @@
 </template>
 <script lang="ts" setup>
 import { message } from 'ant-design-vue'
-import { info } from 'console'
 import { Dayjs } from 'dayjs'
 const value = ref<Dayjs>()
 
@@ -56,7 +55,7 @@ const getMonthData = (value: Dayjs) => {
 }
 
 const onPanelChange = (value: Dayjs, mode: string) => {
-  message.info(`current mode: ${mode}`)
+  message.info(`current value: ${value.format('YYYY-MM-DD')} mode: ${mode}`)
 }
 
 const onSelect = (date: Dayjs) => {
